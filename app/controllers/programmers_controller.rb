@@ -7,3 +7,8 @@ class ProgrammersController < ApplicationController
     @programmer = Programmer.find(params[:id])
   end
 end
+ private
+
+ def set_programmers
+   @programmer = Programmer.find(params[:id])
+ end
